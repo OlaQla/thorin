@@ -39,4 +39,5 @@ def contact():
 def careers():
     return render_template("careers.html", page_title = "Come and work with Us!")
 
-app.run(host="localhost", port="5000", debug=True)
+if __name__ == '__main__':
+    app.run(host="localhost", port="5000", debug=True)
